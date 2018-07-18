@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "description": "My weather app",
-  "main": "client/index.js",
+  "main": "client/app.js",
   "scripts": {
     "test": "",
     "build": "webpack --config build/webpack.prod.js",
@@ -39,12 +39,11 @@
     "ie > 8"
   ],
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-runtime": "^6.18.0",
     "promise-polyfill": "^6.0.2",
-    "vue": "^2.2.0",
-    "vue-router": "^2.0.0",
-    "vuex": "^2.0.0",
-    "vuex-router-sync": "^4.0.0"
+    "vue": "^2.5.7",
+    "vue-router": "3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

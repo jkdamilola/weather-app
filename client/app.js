@@ -1,15 +1,14 @@
-import Vue from 'vue'
-import { sync } from 'vuex-router-sync'
-import App from './components/App'
-import router from './router'
-import store from './store'
+import Vue from 'vue';
+import App from './components/App';
+import router from './router';
 
-sync(store, router)
+Vue.component('header-bar', require('./components/Header.vue'));
+Vue.component('search', require('./components/Search.vue'));
+Vue.component('weather', require('./components/Weather.vue'));
 
 const app = new Vue({
   router,
-  store,
   ...App
 })
 
-export { app, router, store }
+export { app, router }
